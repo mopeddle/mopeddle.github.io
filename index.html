@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                width: 100%;
+                display: block;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero-banner {
+            height: 400px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-banner img{
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px auto;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .hero-banner.black-bg {
+            background-color: black;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+            grid-template-rows: repeat(2, auto); /* Two rows with automatic height */
+            gap: 20px; /* Gap between grid items */
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Mac</a>
+        <a href="#">iPhone</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero-banner">
+        <h1>iPhone</h1>
+        <p>Shop now ></p>
+        <img src="Apple-Assg-Images/Apple-Assg-Images/6.png">
+    </div>
+    
+    <div class="hero-banner black-bg">
+        <h1>Your Black Hero Banner</h1>
+        <p>This is another hero banner with a black background and white text.</p>
+        <img src="Apple-Assg-Images/Apple-Assg-Images/5.png" style="min-width: 600px;">
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+
+</body>
+
+</html>
